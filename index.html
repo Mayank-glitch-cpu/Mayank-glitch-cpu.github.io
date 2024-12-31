@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Massively by HTML5 UP</title>
+		<title>My portfolio</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -19,8 +19,8 @@
 
 				<!-- Intro -->
 					<div id="intro">
-						<h1>My<br />
-						Portfolio</h1>
+						<h1>Mayank<br />
+						Vyas</h1>
 						<p>This website showcases my Projects, Acheivements, Blogs,Publications and articles.<br />
 						</p>
 						<ul class="actions">
@@ -57,7 +57,7 @@
 						<!-- Featured Post -->
 							<article class="post featured">
 								<header class="major">
-									<span class="date">December 27, 2024</span>
+									<!-- <span id="current-date">December 30, 2024</span> -->
 									<h2><a href="#">About Me<br /></h2>
 									<!-- massive headline</a></h2> -->
 									<p>Hello, I’m Mayank Vyas, a master’s student in Data Analytics at Arizona State University. I specialize in data science, machine learning, and AI-driven solutions for real-world problems. Explore my portfolio to learn more about my projects, experience, and skills.</p>
@@ -231,6 +231,19 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script>
+				// Function to dynamically update the date
+				function updateDate() {
+					const dateElement = document.getElementById('current-date');
+					const options = { year: 'numeric', month: 'long', day: 'numeric' }; // Format: "December 27, 2024"
+					const currentDate = new Date().toLocaleDateString('en-US', options);
+					dateElement.textContent = currentDate;
+				}
+			
+				// Call the function to set the date
+				updateDate();
+			</script>
+			
 
 	</body>
 </html>

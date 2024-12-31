@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Generic Page - Massively by HTML5 UP</title>
+		<title>My portfolio</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -48,7 +48,7 @@
 						<!-- Post -->
 							<section class="post">
 								<header class="major">
-									<span class="date">December 29</span>
+									<!-- <span class="date">December 29</span> -->
 									<h1>Hello !! :)<br /></h1>
 									<!-- </h1> -->
 									<p> I'm <strong>Mayank Vyas</strong>, a master’s student in Data Analytics at Arizona State University. My journey revolves around turning raw data into actionable insights, with a passion for leveraging AI and machine learning to solve real-world challenges.</p>
@@ -149,6 +149,19 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script>
+				// Function to dynamically update the date
+				function updateDate() {
+					const dateElement = document.getElementById('current-date');
+					const options = { year: 'numeric', month: 'long', day: 'numeric' }; // Format: "December 27, 2024"
+					const currentDate = new Date().toLocaleDateString('en-US', options);
+					dateElement.textContent = currentDate;
+				}
+			
+				// Call the function to set the date
+				updateDate();
+			</script>
+			
 
 	</body>
 </html>
