@@ -112,7 +112,27 @@ input, select, textarea {
 			-ms-transition: none !important;
 			transition: none !important;
 		}
-
+/* typewriter effect */
+.typewriter-container {
+	font-family: 'Courier New', Courier, monospace;
+	font-size: 1.5rem;
+	white-space: nowrap;
+	overflow: hidden;
+	width: 100%;
+  }
+  
+  .cursor {
+	display: inline-block;
+	margin-left: 2px;
+	animation: blink 0.7s step-end infinite;
+  }
+  
+  @keyframes blink {
+	50% {
+	  opacity: 0;
+	}
+  }
+  
 /* Type */
 
 	html {

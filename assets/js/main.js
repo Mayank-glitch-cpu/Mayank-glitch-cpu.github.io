@@ -3,7 +3,42 @@
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
-
+// Typewriter script
+const lines = [
+	"Data Science Enthusiast",
+	"Business Analytics Expert",
+	"IoT Innovator",
+	"Cybersecurity Learner",
+	"Always Exploring New Horizons"
+  ];
+  
+  const typewriter = document.getElementById('typewriter');
+  let lineIndex = 0;
+  let charIndex = 0;
+  
+  function typeEffect() {
+	if (charIndex < lines[lineIndex].length) {
+	  typewriter.textContent += lines[lineIndex].charAt(charIndex);
+	  charIndex++;
+	  setTimeout(typeEffect, 100); // Adjust typing speed here
+	} else {
+	  setTimeout(deleteEffect, 1500); // Pause before deleting
+	}
+  }
+  
+  function deleteEffect() {
+	if (charIndex > 0) {
+	  typewriter.textContent = lines[lineIndex].substring(0, charIndex - 1);
+	  charIndex--;
+	  setTimeout(deleteEffect, 50); // Adjust deleting speed here
+	} else {
+	  lineIndex = (lineIndex + 1) % lines.length; // Move to the next line
+	  setTimeout(typeEffect, 500); // Pause before typing the next line
+	}
+  }
+  
+  typeEffect();
+  
 (function($) {
 
 	var	$window = $(window),
