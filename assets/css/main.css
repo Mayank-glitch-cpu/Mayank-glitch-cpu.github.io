@@ -64,6 +64,38 @@ input::-moz-focus-inner {
 	border: 0;
 	padding: 0;
 }
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+.background {
+    height: 100vh;
+    background: url('F:\Mayank-glitch-cpu.github.io\images\hBot.png') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.overlay-text {
+    color: white;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Transparent black background */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+p {
+    font-size: 1.5rem;
+}
 
 input, select, textarea {
 	-moz-appearance: none;
