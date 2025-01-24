@@ -200,7 +200,7 @@ input, select, textarea {
 	}
 
 	body, input, select, textarea {
-		font-family: "Merriweather", Georgia, serif;
+		font-family: "Times New Roman", Times, serif;
 		font-weight: 300;
 		font-size: 1rem;
 		line-height: 2.375;
@@ -230,7 +230,9 @@ input, select, textarea {
 	p {
 		text-align: justify;
 		margin: 0 0 2rem 0;
-	}
+		font-family: 'Times New Roman', Times, serif;
+		font-size: 1rem;
+		color: black;	}
 
 	h1, h2, h3, h4, h5, h6 {
 		font-family: "Source Sans Pro", Helvetica, sans-serif;
@@ -3914,7 +3916,7 @@ input, select, textarea {
 			}
 
 			#main > .posts > article {
-				border-color: #eeeeee;
+				border-color:#212931;
 				border-left-width: 2px;
 				border-style: solid;
 				border-top-width: 2px;
